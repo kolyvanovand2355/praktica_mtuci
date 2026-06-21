@@ -1,0 +1,12 @@
+services:
+  traffic-signs-app:
+    build: .
+    container_name: traffic_signs
+    ports:
+      - "8501:8501"
+    volumes:
+      # Монтируем модели и результаты, чтобы не пересобирать образ
+      - ./models:/app/models
+      - ./results:/app/results
+      - ./data:/app/data
+    restart: unless-stopped

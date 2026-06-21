@@ -1,0 +1,15 @@
+__pycache__
+*.pyc
+*.pyo
+.venv
+venv
+.git
+.gitignore
+.vscode
+*.md
+data/Train
+data/Test
+data/Meta
+*.csv
+.pytest_cache
+.ipynb_checkpoints
